@@ -4,7 +4,9 @@ extends Button
 # var a = 2
 # var b = "textvar"
 func _on_button_pressed():
-    print("test number 2")
+    var teleshopping = get_node("/root/World/tv/Teleshopping1")
+    teleshopping.queue_free()
+    print("removed gif 1")
 
 func _ready():
 	connect("pressed",self,"_on_button_pressed")
